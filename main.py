@@ -15,6 +15,7 @@ class Album(BaseModel):
 app.mount("/static", StaticFiles(directory="static"), name="static")
 # Static dataset of Radiohead albums
 
+baseUrl = "127.0.0.1:8000"
 
 
 albums_data = [
@@ -22,56 +23,56 @@ albums_data = [
         title="Pablo Honey",
         year=1993,
         label="Parlophone",
-        cover_url= "/static/albums/pablo.jpg"
+        cover_url= f"{baseUrl}/static/albums/pablo.jpg"
     ),
     Album(
         title="The Bends",
         year=1995,
         label="Parlophone",
-        cover_url="/static/albums/thebends.jpg"
+        cover_url=f"{baseUrl}/static/albums/thebends.jpg"
     ),
     Album(
         title="OK Computer",
         year=1997,
         label="Parlophone",
-        cover_url="/static/albums/okcomputer.png"
+        cover_url=f"{baseUrl}/static/albums/okcomputer.png"
     ),
     Album(
         title="Kid A",
         year=2000,
         label="Parlophone",
-        cover_url="/static/albums/kida.jpg"
+        cover_url=f"{baseUrl}/static/albums/kida.jpg"
     ),
     
     Album(
         title="Amnesiac",
         year=2001,
         label="Parlophone",
-        cover_url="/static/albums/amnesiac.jpg"
+        cover_url=f"{baseUrl}/static/albums/amnesiac.jpg"
     ),
     Album(
         title="Hail to the Thief",
         year=2003,
         label="Parlophone",
-        cover_url="/static/albums/hailtothethief.jpg"
+        cover_url=f"{baseUrl}/static/albums/hailtothethief.jpg"
     ),
     Album(
         title="In Rainbows",
         year=2007,
         label="Self-released",
-        cover_url="/static/albums/inrainbows.jpg"
+        cover_url=f"{baseUrl}/static/albums/inrainbows.jpg"
     ),
     Album(
         title="The King of Limbs",
         year=2011,
         label="XL Recordings",
-        cover_url="/static/albums/thekingofthelimbs.jpg"
+        cover_url=f"{baseUrl}/static/albums/thekingofthelimbs.jpg"
     ),
     Album(
         title="A Moon Shaped Pool",
         year=2016,
         label="XL Recordings",
-        cover_url="/static/albums/amoonshapedpool.jpg"
+        cover_url=f"{baseUrl}/static/albums/amoonshapedpool.jpg"
     ),
 ]
 
