@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import List
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Radiohead Albums API")
 
@@ -17,6 +18,17 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 baseUrl = "http://127.0.0.1:8000"
 
+
+
+### to unblock request from browser to backend
+### usualy for build web
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # atau spesifik: ["http://localhost:3000"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 albums_data = [
     Album(
