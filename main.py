@@ -23,56 +23,56 @@ albums_data = [
         title="Pablo Honey",
         year=1993,
         label="Parlophone",
-        cover_url= f"{base_static_url}pablo.jpg"
+        cover_url= "/static/pablo.jpg"
     ),
     Album(
         title="The Bends",
         year=1995,
         label="Parlophone",
-        cover_url=f"{base_static_url}thebends.jpg"
+        cover_url="/static/thebends.jpg"
     ),
     Album(
         title="OK Computer",
         year=1997,
         label="Parlophone",
-        cover_url=f"{base_static_url}okcomputer.png"
+        cover_url="/static/okcomputer.png"
     ),
     Album(
         title="Kid A",
         year=2000,
         label="Parlophone",
-        cover_url=f"{base_static_url}kida.jpg "
+        cover_url="/static/kida.jpg"
     ),
     
     Album(
         title="Amnesiac",
         year=2001,
         label="Parlophone",
-        cover_url=f"{base_static_url}amnesiac.jpg"
+        cover_url="/static/amnesiac.jpg"
     ),
     Album(
         title="Hail to the Thief",
         year=2003,
         label="Parlophone",
-        cover_url=f"{base_static_url}hailtothethief.jpg"
+        cover_url="/static/hailtothethief.jpg"
     ),
     Album(
         title="In Rainbows",
         year=2007,
         label="Self-released",
-        cover_url=f"{base_static_url}inrainbows.jpg"
+        cover_url="/static/inrainbows.jpg"
     ),
     Album(
         title="The King of Limbs",
         year=2011,
         label="XL Recordings",
-        cover_url=f"{base_static_url}thekingofthelimbs.jpg"
+        cover_url="/static/thekingofthelimbs.jpg"
     ),
     Album(
         title="A Moon Shaped Pool",
         year=2016,
         label="XL Recordings",
-        cover_url=f"{base_static_url}amoonshapedpool.jpg"
+        cover_url="/static/amoonshapedpool.jpg"
     ),
 ]
 
