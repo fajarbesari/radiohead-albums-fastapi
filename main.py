@@ -15,7 +15,7 @@ class Album(BaseModel):
 app.mount("/static", StaticFiles(directory="static"), name="static")
 # Static dataset of Radiohead albums
 
-baseUrl = "127.0.0.1:8000"
+baseUrl = "http://127.0.0.1:8000"
 
 
 albums_data = [
